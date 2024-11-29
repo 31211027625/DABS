@@ -11,10 +11,10 @@ const port = process.env.PORT || 4000
 connectDB()
 connectCloudinary()
 
-//middlewares
+//middlewares 
 app.use(express.json())
 app.use(cors())
-// api endpoints
+// api endpoints 
 app.use('/api/admin',adminRouter)
 
 app.get('/',(req,res)=>{
