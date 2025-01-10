@@ -4,7 +4,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 import { useEffect } from 'react'
 const MyAppointments = () => {
-  const { backendUrl, token } = useContext(AppContext)
+  const { backendUrl, token,getDoctorsData } = useContext(AppContext)
   const [appointments, setAppointments] = useState([])
   const months = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
   const slotDateFormat = (slotDate) => {
@@ -30,6 +30,7 @@ const MyAppointments = () => {
       if (data.success){
         toast.success(data.message)
         getUserAppointments()
+        getDoctorsData()
       } else {
         toast.error(data.message)
       }
