@@ -42,12 +42,12 @@ const MyProfile = () => {
         isEdit
           ? <label htmlFor="image">
               <div className='inline-block relative cursor-pointer'>
-                <img className='w-36 rounded opacity-75' src={image ? URL.createObjectURL(image) : userData.image} alt="" />
-                <img className='w-10 absolute bottom-12 right-12' src={image ? '' : assets.upload_icon} alt="" />
+                <img className='w-36 rounded opacity-75' src={image ? URL.createObjectURL(image) : userData.image} alt="user's image" />
+                <img className='w-10 absolute bottom-12 right-12' src={image ? '' : assets.upload_icon} alt="user's image" />
               </div>
               <input onChange={(e) => setImage(e.target.files[0])} type="file" name="" id="image" hiddne />
             </label>
-          : <img className='w-36 rounded' src={userData.image} alt="" />
+          : <img className='w-36 rounded' src={userData.image} alt="user's image" />
       }
 
       {
