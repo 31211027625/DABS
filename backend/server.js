@@ -22,7 +22,7 @@ app.use('/api/doctor',doctorRouter)
 app.use('/api/user',userRouter)
 
 app.get('/',(req,res)=>{
-    res.send('API WORKING')
+    res.send('Server is running')
 })
 
 app.listen(port,()=> console.log("Server Started",port))
