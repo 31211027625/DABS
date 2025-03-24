@@ -17,19 +17,19 @@ const Navbar = () => {
         <img onClick={()=>navigate('/')} className='w-44 cursor-pointer' src={assets.logo} alt="logo" />
         <ul className='hidden md:flex items-start gap-5 font-medium'>
             <NavLink to ='/'>
-                <li className ='py-1' >HOME</li>
+                <li className ='py-1' >TRANG CHỦ</li>
                 <hr className ='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
             <NavLink to='/doctors'>
-                <li className ='py-1' >ALL DOCTORS</li>
+                <li className ='py-1' >DS BÁC SĨ</li>
                 <hr className ='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
             <NavLink to ='/about'>
-                <li className ='py-1' >ABOUT</li>
+                <li className ='py-1' >THÔNG TIN</li>
                 <hr className ='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
             <NavLink to ='/contact'>
-                <li className ='py-1' >CONTACT</li>
+                <li className ='py-1' >LIÊN HỆ</li>
                 <hr className ='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
         </ul>
@@ -41,13 +41,13 @@ const Navbar = () => {
                     <img className='w-2.5' src={assets.dropdown_icon} alt="" />
                     <div className='absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 hidden group-hover:block'>
                         <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'> 
-                            <p onClick={()=>navigate('/my-profile')} className='hover:text-black cursor-pointer'>My Profile</p>
-                            <p onClick={()=>navigate('/my-appointments')} className='hover:text-black cursor-pointer'>My Appointments</p>
-                            <p onClick={logout} className='hover:text-black cursor-pointer'>Logout</p>
+                            <p onClick={()=>navigate('/my-profile')} className='hover:text-black cursor-pointer'>Trang cá nhân</p>
+                            <p onClick={()=>navigate('/my-appointments')} className='hover:text-black cursor-pointer'>Lịch khám của tôi</p>
+                            <p onClick={logout} className='hover:text-black cursor-pointer'>Đăng xuất</p>
                         </div>
                     </div>
                 </div>
-                :<button onClick={()=>navigate('/login')} className='bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block'>Create account</button>
+                :<button onClick={()=>navigate('/login')} className='bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block'>Tạo tài khoản</button>
             }
             <img onClick={()=>setShowMenu(true)} className='w-6 md:hidden' src={assets.menu_icon} alt="menu_icon" />
             {/*Mobile Menu */}
@@ -57,10 +57,10 @@ const Navbar = () => {
                   <img className='w-7' onClick={()=>setShowMenu(false)} src={assets.cross_icon} alt="cross_icon" />  
                 </div>
                 <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
-                    <NavLink  onClick={()=>setShowMenu(false)} to='/'><p className='px-4 py-2 rounded inline-block'>Home</p></NavLink>
-                    <NavLink  onClick={()=>setShowMenu(false)} to='/doctors'><p className='px-4 py-2 rounded inline-block'>ALL DOCTORS</p></NavLink>
-                    <NavLink  onClick={()=>setShowMenu(false)} to='/about'><p className='px-4 py-2 rounded inline-block'>ABOUT</p></NavLink>
-                    <NavLink  onClick={()=>setShowMenu(false)} to='/contact'><p className='px-4 py-2 rounded inline-block'>CONTACT</p></NavLink>
+                    <NavLink  onClick={()=>setShowMenu(false)} to='/'><p className='px-4 py-2 rounded inline-block'>TRANG CHỦ</p></NavLink>
+                    <NavLink  onClick={()=>setShowMenu(false)} to='/doctors'><p className='px-4 py-2 rounded inline-block'>DS BÁC SĨ</p></NavLink>
+                    <NavLink  onClick={()=>setShowMenu(false)} to='/about'><p className='px-4 py-2 rounded inline-block'>THÔNG TIN</p></NavLink>
+                    <NavLink  onClick={()=>setShowMenu(false)} to='/contact'><p className='px-4 py-2 rounded inline-block'>LIÊN HỆ</p></NavLink>
                 </ul>
             </div>
         </div>

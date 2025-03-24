@@ -7,14 +7,14 @@ const Header = () => {
         {/*------------Left Side ----------------*/}
         <div className='md:w-1/2 flex flex-col items-start justify-center gap-4 py-10 m-auto md:py-[10vw] md:mb-[-30px]'>
             <p className='text-3xl md:text-4xl lg:text-5xl text-white font-semiblod leading-tight md:leading-tight lg:leading-tight '>
-                Book Appointment <br /> With Trusted Doctors
+                Đặt lịch khám <br /> Với các bác sĩ đáng tin cậy
             </p>
             <div className='flex flex-col md:flex-row items-center gap-3 text-white text-sm font-light '>
                 <img className='w-28' src={assets.group_profiles} alt="group_profile" />
-                <p>Simply browse through our extensive list of trusted doctors,<br className='hideen sm:block' /> chedule your appointment hassle-free.</p>
+                <p>Chỉ cần duyệt qua danh sách dài các bác sĩ đáng tin cậy của chúng tôi,<br className='hideen sm:block' /> lên lịch cuộc hẹn của bạn một cách dễ dàng.</p>
             </div>
             <a href="#speciality" className='flex items-center gap-2 bg-white h-12 px-8  oy-3 rounded-full text-gray-600 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300'>
-                Book appointment <img className='w-3' src={assets.arrow_icon}  alt="arrow_icon" />
+                Đặt lịch khám <img className='w-3' src={assets.arrow_icon}  alt="arrow_icon" />
             </a>
         </div>
         {/*------------Right Side ----------------*/}

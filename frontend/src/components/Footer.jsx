@@ -12,17 +12,17 @@ const Footer = () => {
         </div>
         {/*Center*/}
         <div>
-          <p className='text-xl font-medium mb-5'>Company</p>
+          <p className='text-xl font-medium mb-5'>Chúng tôi</p>
           <ul className='flex flex-col gap-2 text-gray-600'>
-            <li>Home</li>
-            <li>About us </li>
-            <li>Contact us</li>
-            <li>Privacy policy</li>
+            <li>Trang chủ</li>
+            <li>Về chúng tôitôi </li>
+            <li>Liên hệ</li>
+            <li>Chính sách bảo mật</li>
           </ul>
         </div>
         {/*Right*/}
         <div>
-          <p className='text-xl font-medium mb-5'>Get in touch</p>
+          <p className='text-xl font-medium mb-5'>Thông tin liên lạc</p>
           <ul className='flex flex-col gap-2 text-gray-600'>
             <li>0945712321</li>
             <li>ldnhatvu1304@gmail.com</li>
