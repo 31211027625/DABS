@@ -46,8 +46,8 @@ const Login = () => {
   return (
     <form onSubmit={onSubmitHandler} className='min-h-[80vh] flex items-center' >
       <div className='flex flex-col gap-3 m-auto items-start p-8 minx-w-[340px] sm:min-w-96 border rounded-xl text-zinc-600 text-sm shadow-lg'>
-        <p className='text-2xl font-semibold'>{state === 'Sign Up' ? "Create Account" : "Login"}</p>
-        <p>Hãy {state === 'Sign Up' ? "sign up" : "login"} để đặt lịch khám</p>
+        <p className='text-2xl font-semibold'>{state === 'Sign Up' ? "Tạo tài khoản" : "Đăng nhập"}</p>
+        <p>Hãy {state === 'Sign Up' ? "đăng ký" : "đăng nhập"} để đặt lịch khám</p>
         {
           state === "Sign Up" && <div className='w-full '>
             <p>Họ tên</p>
@@ -64,7 +64,7 @@ const Login = () => {
           <input className='border border-zinc-300 rounded w-full p-2 mt-1' type="text" onChange={(e) => setPassword(e.target.value)} value={password} required />
         </div>
 
-        <button type='submit' className='bg-primary text-white w-full py-2 rounded-md text-base '>{state === 'Sign Up' ? "Tạo tài khoản" : "Đăng nhập"}</button>
+        <button type='submit' className='bg-primary text-white w-full py-2 rounded-md text-base '>{state === 'Sign Up' ? "Tạo tài khoản" : "Đăng"}</button>
         {
           state === "Sign Up"
             ? <p>Đã có tài khoản?<span onClick={() => setState('Login')} className='text-primary underline cursor-pointer'>Đăng nhập ở đây</span> </p>
